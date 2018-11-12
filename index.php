@@ -3,6 +3,7 @@ include_once 'app/config.php';
 ?>
 <?php include_once APP_ROOT . '/templates/header.php'; ?>
         <link rel="stylesheet" href="app/css/main.css">
+        <link rel="shortcut icon" href="app/images/favicon.ico" type="image/x-icon">
         <title>Stock Market Analyzer</title>
     </head>
     <body>
@@ -11,6 +12,7 @@ include_once 'app/config.php';
         </header>
         <img src="app/images/stocks-64.png" alt="Stocks">
         <div id="downloadStocks">
-            <h4><a href="stockDownloader.php">Download the stocks</a></h4>
+            <button class="inverse"><a href="stockDownloader.php">Download the stocks</a></button>
+            <button class="inverse"><a href="analysis/analysis_a.php">Analyse the stocks and fetch the results</a></button>
         </div>
 <?php include_once APP_ROOT . '/templates/footer.php'; ?>

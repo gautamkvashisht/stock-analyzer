@@ -52,7 +52,7 @@ include_once 'app/config.php';
             $insertQuery->bindValue(':high', $high, SQLITE3_FLOAT);
             $insertQuery->bindValue(':low', $low, SQLITE3_FLOAT);
             $insertQuery->bindValue(':close', $close, SQLITE3_FLOAT);
-            $insertQuery->bindValue(':volume', $volume, SQLITE3_FLOAT);
+            $insertQuery->bindValue(':volume', $volume, SQLITE3_INTEGER);
             $insertQuery->bindValue(':amount_change', $amount_change, SQLITE3_FLOAT);
             $insertQuery->bindValue(':percent_change', $percent_change, SQLITE3_FLOAT);
             $insertQuery->execute();
@@ -83,6 +83,7 @@ main();
 ?>
 
 <?php include_once APP_ROOT . '/templates/header.php'; ?>
+        <link rel="shortcut icon" href="app/images/favicon.ico" type="image/x-icon">
         <title>Stock Downloader</title>
     </head>
     <body>
